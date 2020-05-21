@@ -3,7 +3,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby--plugin-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
         extentions: [`md`, `.mdx`],
         gatsbyRemarkplugins: [
@@ -14,6 +14,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fontes: [`roboto mono`, "source sans pro:300,400,400i,700"],
+        display: `swap`,
       },
     },
     {
